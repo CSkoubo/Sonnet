@@ -1,0 +1,47 @@
+﻿  OsiColCutTest.cpp
+  OsiCutsTest.cpp
+  OsiNetlibTest.cpp
+  OsiRowCutDebuggerTest.cpp
+  OsiRowCutTest.cpp
+C:\repos\clients\rcc\Sonnet\Osi\src\OsiCommonTest\OsiRowCutTest.cpp(272,23): warning C4101: 'e': unreferenced local variable
+  OsiSimplexAPITest.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/OsiCommonTest/OsiSimplexAPITest.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  OsiSolverInterfaceTest.cpp
+C:\repos\clients\rcc\Sonnet\Osi\src\OsiCommonTest\OsiSolverInterfaceTest.cpp(3373,25): warning C4101: 'e': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Osi\src\OsiCommonTest\OsiSolverInterfaceTest.cpp(3416,25): warning C4101: 'e': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Osi\src\OsiCommonTest\OsiSolverInterfaceTest.cpp(3648,25): warning C4101: 'err': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/OsiCommonTest/OsiSolverInterfaceTest.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  OsiUnitTestUtils.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/OsiCommonTest/OsiUnitTestUtils.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Generating Code...
+  libOsiCommonTest.vcxproj -> C:\repos\clients\rcc\Sonnet\Sonnet\MSVisualStudio\v17\x64\Debug\libOsiCommonTest.lib

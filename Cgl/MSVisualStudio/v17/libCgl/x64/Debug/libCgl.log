@@ -1,0 +1,456 @@
+﻿  CglAllDifferent.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglAllDifferent/CglAllDifferent.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglBKClique.cpp
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(128,25): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 2 has type 'size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(128,25):
+  consider using '%zu' in the format string
+  
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(296,28): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(370,26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(381,25): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglBKClique\CglBKClique.cpp(381,25):
+  consider using '%zd' in the format string
+  
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglBKClique/CglBKClique.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglCliqueStrengthening.cpp
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(342,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(399,52): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(528,33): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(540,41): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(575,23): warning C4267: '=': conversion from 'size_t' to 'CoinBigIndex', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglCliqueStrengthening\CglCliqueStrengthening.cpp(580,19): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+  CglClique.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglClique/CglClique.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglCliqueHelper.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglClique/CglCliqueHelper.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglCutGenerator.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglCommon/CglCutGenerator.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglDuplicateRow.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglDuplicateRow/CglDuplicateRow.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglFlowCover.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglFlowCover/CglFlowCover.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglGMI.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglGMI/CglGMI.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglGMIParam.cpp
+  CglGomory.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglGomory/CglGomory.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglKnapsackCover.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglKnapsackCover/CglKnapsackCover.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglLandP.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglLandP/CglLandP.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglLandPMessages.cpp
+  CglLandPSimplex.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglLandP/CglLandPSimplex.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglLandPTabRow.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglLandP/CglLandPTabRow.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglLandPUtils.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglLandP/CglLandPUtils.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglLandPValidator.cpp
+  CglLiftAndProject.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglLiftAndProject/CglLiftAndProject.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglMessage.cpp
+  Generating Code...
+  Compiling...
+  CglMixedIntegerRounding.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglMixedIntegerRounding/CglMixedIntegerRounding.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglMixedIntegerRounding2.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglMixedIntegerRounding2/CglMixedIntegerRounding2.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglOddHole.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglOddHole/CglOddHole.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglParam.cpp
+  CglOddWheel.cpp
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(101,25): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 1 has type 'const size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(101,25):
+  consider using '%zd' in the format string
+  
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(101,25): warning C4477: 'fprintf' : format string '%ld' requires an argument of type 'long', but variadic argument 2 has type 'size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(101,25):
+  consider using '%zd' in the format string
+  
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(117,29): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(128,29): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'const size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(128,29):
+  consider using '%zu' in the format string
+  
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(140,46): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(175,54): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(218,19): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(264,25): warning C4477: 'fprintf' : format string '%lu' requires an argument of type 'unsigned long', but variadic argument 1 has type 'size_t'
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglOddWheel\CglOddWheel.cpp(264,25):
+  consider using '%zu' in the format string
+  
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglOddWheel/CglOddWheel.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglPreProcess.cpp
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5075,15): warning C4101: 'iflagl': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5073,24): warning C4101: 'kre': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5073,19): warning C4101: 'krs': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5075,7): warning C4101: 'iflagu': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5077,18): warning C4101: 'dmaxdown': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(5077,10): warning C4101: 'dmaxup': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cgl\src\CglPreProcess\CglPreProcess.cpp(6021,1): warning C4005: 'F77_FUNC': macro redefinition
+  C:\repos\clients\rcc\Sonnet\Cgl\src\CglCommon\configall_system_msc.h(11,1):
+  see previous definition of 'F77_FUNC'
+  
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglPreProcess/CglPreProcess.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglProbing.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglProbing/CglProbing.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglRedSplit2.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglRedSplit2/CglRedSplit2.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglRedSplit2Param.cpp
+  CglRedSplit2Test.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglRedSplit2/CglRedSplit2Test.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglRedSplit.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglRedSplit/CglRedSplit.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglRedSplitParam.cpp
+  CglResidualCapacity.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglResidualCapacity/CglResidualCapacity.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglResidualCapacityTest.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglResidualCapacity/CglResidualCapacityTest.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglSimpleRounding.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglSimpleRounding/CglSimpleRounding.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglStored.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglCommon/CglStored.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglTreeInfo.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglCommon/CglTreeInfo.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglTwomir.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglTwomir/CglTwomir.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Cgl012cut.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglZeroHalf/Cgl012cut.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CglZeroHalf.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglZeroHalf/CglZeroHalf.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Generating Code...
+  Compiling...
+  CglZeroHalfTest.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CglZeroHalf/CglZeroHalfTest.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Generating Code...
+  libCgl.vcxproj -> C:\repos\clients\rcc\Sonnet\Sonnet\MSVisualStudio\v17\x64\Debug\libCgl.lib

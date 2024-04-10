@@ -1,0 +1,10 @@
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcCbcParam.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcCbcParam.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcLinked.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcLinked.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcLinkedUtils.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcLinkedUtils.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcMipStartIO.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcMipStartIO.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcSolver.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolverAnalyze.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcSolverAnalyze.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolverExpandKnapsack.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcSolverExpandKnapsack.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolverHeuristics.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\CbcSolverHeuristics.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\Cbc_C_Interface.obj
+C:\repos\clients\rcc\Sonnet\Cbc\src\unitTestClp.cpp;C:\repos\clients\rcc\Sonnet\Cbc\MSVisualStudio\v17\libCbcSolver\x64\Debug\unitTestClp.obj

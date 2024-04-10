@@ -1,0 +1,13 @@
+﻿  OsiCbcSolverInterface.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/OsiCbc/OsiCbcSolverInterface.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  libOsiCbc.vcxproj -> C:\repos\clients\rcc\Sonnet\Sonnet\MSVisualStudio\v17\x64\Debug\libOsiCbc.lib

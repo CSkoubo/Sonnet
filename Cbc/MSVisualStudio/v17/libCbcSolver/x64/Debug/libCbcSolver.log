@@ -1,0 +1,171 @@
+﻿  CbcCbcParam.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcCbcParam.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcLinked.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcLinked.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcLinkedUtils.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcLinkedUtils.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcMipStartIO.cpp
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcMipStartIO.cpp(49,22): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcMipStartIO.cpp(91,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcMipStartIO.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcSolver.cpp
+C:\repos\clients\rcc\Sonnet\Clp\src\ClpParameters.hpp(84,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/CbcSolver.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcParameters.hpp(564,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/CbcSolver.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(1652,18): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(5164,23): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(5165,36): warning C4804: '/': unsafe use of type 'bool' in operation
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(5166,21): warning C4804: '-=': unsafe use of type 'bool' in operation
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(5170,23): warning C4804: '>': unsafe use of type 'bool' in operation
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(5172,21): warning C4804: '-=': unsafe use of type 'bool' in operation
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(6622,38): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(9615,34): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(9668,37): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(9767,27): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(9951,45): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(9952,49): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(1538,9): warning C4101: 'status': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcSolver.cpp(8646,22): warning C4101: 'timing': unreferenced local variable
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcSolver.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcSolverAnalyze.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcSolverAnalyze.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcSolverExpandKnapsack.cpp
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcSolverExpandKnapsack.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  CbcSolverHeuristics.cpp
+C:\repos\clients\rcc\Sonnet\Clp\src\ClpParameters.hpp(84,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/CbcSolverHeuristics.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcParameters.hpp(564,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/CbcSolverHeuristics.cpp')
+  
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/CbcSolverHeuristics.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Cbc_C_Interface.cpp
+C:\repos\clients\rcc\Sonnet\Clp\src\ClpParameters.hpp(84,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/Cbc_C_Interface.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcParameters.hpp(564,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/Cbc_C_Interface.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(539,48): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(1895,45): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(2185,68): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(2192,31): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(2386,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(3655,40): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(3849,24): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\Cbc\src\Cbc_C_Interface.cpp(3885,53): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/Cbc_C_Interface.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  unitTestClp.cpp
+C:\repos\clients\rcc\Sonnet\Clp\src\ClpParameters.hpp(84,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/unitTestClp.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\CbcParameters.hpp(564,22): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '../../../src/unitTestClp.cpp')
+  
+C:\repos\clients\rcc\Sonnet\Cbc\src\unitTestClp.cpp(629,17): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19): warning C4244: 'argument': conversion from 'const CoinByteArray' to 'const CoinBigIndex', possible loss of data
+  (compiling source file '../../../src/unitTestClp.cpp')
+  C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(360,19):
+  the template instantiation context (the oldest one first) is
+  	C:\repos\clients\rcc\Sonnet\CoinUtils\src\CoinHelperFunctions.hpp(625,5):
+  	see reference to function template instantiation 'void CoinMemcpyN<char>(const T *,const CoinByteArray,T *)' being compiled
+          with
+          [
+              T=char
+          ]
+  
+  Generating Code...
+  libCbcSolver.vcxproj -> C:\repos\clients\rcc\Sonnet\Sonnet\MSVisualStudio\v17\x64\Debug\libCbcSolver.lib
