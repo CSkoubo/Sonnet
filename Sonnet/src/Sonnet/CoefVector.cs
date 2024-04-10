@@ -79,7 +79,7 @@ namespace Sonnet
             return left.CompareTo(right) <= 0; // check this!
         }
 
-        public static bool operator != (Coef left, Coef right)
+        public static bool operator !=(Coef left, Coef right)
         {
             return !(left == right);
         }
@@ -117,7 +117,7 @@ namespace Sonnet
         {
             Ensure.NotNull(var1, "variable1 of coef");
             Ensure.NotNull(var2, "variable2 of coef");
-            Ensure.IsFalse(double.IsNaN(coef), "coef is not a number (NaN)"); 
+            Ensure.IsFalse(double.IsNaN(coef), "coef is not a number (NaN)");
 
             if (var1.id <= var2.id)
             {
@@ -133,7 +133,7 @@ namespace Sonnet
                 this.var2 = var1;
                 this.id2 = var1.id;
             }
-            
+
             this.coef = coef;
         }
 
@@ -271,7 +271,7 @@ namespace Sonnet
         {
             InternalUtils.Remove<QuadCoef>(this, index);
         }
-        
+
         public override string ToString()
         {
             StringBuilder tmp = new StringBuilder();

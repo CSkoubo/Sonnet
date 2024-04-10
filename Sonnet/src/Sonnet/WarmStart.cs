@@ -2,11 +2,8 @@
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
 //#define SONNET_SETWARMROWPRICE
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 using COIN;
+using System;
 
 namespace Sonnet
 {
@@ -31,7 +28,7 @@ namespace Sonnet
 #endif
             }
         }
-        
+
         internal static WarmStart NewEmptyWarmStart(OsiSolverInterface solver)
         {
             unsafe
@@ -39,7 +36,7 @@ namespace Sonnet
                 return new WarmStart(solver.getEmptyWarmStart(), 0, null, 0, null);
             }
         }
-        
+
         internal void ApplyWarmStart(OsiSolverInterface solver)
         {
             Ensure.NotNull(solver, "solver");
@@ -96,7 +93,7 @@ namespace Sonnet
                     }
                 }
 #if (!SONNET_SETWARMROWPRICE)
-        		if (numberRows > 0 || rowPrice != null) throw new NotSupportedException();
+                if (numberRows > 0 || rowPrice != null) throw new NotSupportedException();
 #endif
             }
 

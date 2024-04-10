@@ -1,12 +1,8 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using COIN;
-using Sonnet;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sonnet;
 
 namespace SonnetTest
 {
@@ -41,7 +37,7 @@ namespace SonnetTest
             Console.WriteLine($"{nameof(SonnetStressTest2)} - min(3,(n+1)) multi-processor stress test");
             int n = Math.Min(3, Environment.ProcessorCount + 1);
             double memoryGb = Utils.AvailableMemoryGb;
-           
+
             // Don't try to use more than 1.0GB when running in 32-bit -- 1.25 GB that seems to be the limit
             // Don't try to use more than 1.0GB when running in 64-bit 
             if (IntPtr.Size * 8 == 32) memoryGb = Math.Min(memoryGb, 1.0); // 32 bit
@@ -50,7 +46,7 @@ namespace SonnetTest
             memoryGb *= 0.5;
 
             memoryGb /= n; // split across n threads
-        
+
             Console.WriteLine("Available Memory (GB) Now: " + Utils.AvailableMemoryGb);
             Console.WriteLine("Number of threads: " + n);
             System.Threading.Thread[] threads = new System.Threading.Thread[n];
@@ -100,7 +96,7 @@ namespace SonnetTest
                 double f;
                 if (IntPtr.Size == 4) f = memoryGb / 0.110;
                 else f = memoryGb / 0.140;
-                
+
                 // Somehow the memory usage is much less on Windows 10 with .NET 4.7, so multiply by 13
                 // the stress test
                 int N = (int)(f * 3000); // number of variables
@@ -127,7 +123,7 @@ namespace SonnetTest
 
                     string rowName = "MyConstraint(" + m + ")";
                     RangeConstraint con = (RangeConstraint)model.Add(rowName,
-                        -model.Infinity <= expr <= 0.5*Z);
+                        -model.Infinity <= expr <= 0.5 * Z);
                     expr.Assemble();
                     Assert.IsTrue(expr.NumberOfCoefficients == Z + 1);
 

@@ -1,7 +1,6 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sonnet;
 

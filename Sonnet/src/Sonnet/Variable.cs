@@ -75,7 +75,7 @@ namespace Sonnet
         /// <param name="upper">The upper bound of the new variable.</param>
         /// <param name="type">The type of the new variable.</param>
         public Variable(string name, double lower = 0.0, double upper = MathUtils.Infinity, VariableType type = VariableType.Continuous)
-            :base(name)
+            : base(name)
         {
             this.lower = lower;
             this.upper = upper;
@@ -135,8 +135,8 @@ namespace Sonnet
         [Obsolete("DEPRECATED. Use ToMap: Dictionary<string, Variable> x = products.ToMap(p => new Variable() { Name = \"x_\" + p.ToString(); });")]
         public static Dictionary<T, Variable> New<T>(IEnumerable<T> set, string varname = null, double lower = 0.0, double upper = MathUtils.Infinity, VariableType type = VariableType.Continuous)
         {
-            Dictionary<T, Variable> tmp = new Dictionary<T,Variable>();
-            foreach(T i in set) 
+            Dictionary<T, Variable> tmp = new Dictionary<T, Variable>();
+            foreach (T i in set)
             {
                 string name = null;
                 if (varname != null) name = string.Format("{0}_{1}", varname, i.ToString());
@@ -177,7 +177,7 @@ namespace Sonnet
             }
             return tmp;
         }
-        
+
         /// <summary>
         /// Returns a value indicating whether this instance is equal to a specified object.
         /// </summary>
@@ -237,7 +237,7 @@ namespace Sonnet
                 if (upper.CompareToEps(value) != 0)
                 {
                     upper = value;
-                    foreach(Solver solver in solvers) solver.SetVariableUpper(this, upper);
+                    foreach (Solver solver in solvers) solver.SetVariableUpper(this, upper);
                 }
             }
         }
@@ -249,11 +249,11 @@ namespace Sonnet
         {
             get { return lower; }
             set
-            { 
+            {
                 if (lower.CompareToEps(value) != 0)
                 {
                     lower = value;
-                    foreach(Solver solver in solvers) solver.SetVariableLower(this, lower);
+                    foreach (Solver solver in solvers) solver.SetVariableLower(this, lower);
                 }
             }
         }
@@ -269,7 +269,7 @@ namespace Sonnet
                 if (type != value)
                 {
                     type = value;
-                    foreach(Solver solver in solvers) solver.SetVariableType(this, type);
+                    foreach (Solver solver in solvers) solver.SetVariableType(this, type);
                 }
             }
         }
@@ -285,7 +285,7 @@ namespace Sonnet
                 if (!Name.Equals(value))
                 {
                     base.Name = value;
-                    foreach(Solver solver in solvers) solver.SetVariableName(this, Name);
+                    foreach (Solver solver in solvers) solver.SetVariableName(this, Name);
                 }
             }
         }
@@ -314,7 +314,7 @@ namespace Sonnet
                 // Now, really do the Freezing:
                 // Adjust the upper and lower bound *in the model only* to this value
                 double freezeValue = Value;
-                foreach(Solver solver in solvers) solver.SetVariableBounds(this, freezeValue, freezeValue);
+                foreach (Solver solver in solvers) solver.SetVariableBounds(this, freezeValue, freezeValue);
                 return true;
             }
             return false;
@@ -337,7 +337,7 @@ namespace Sonnet
                     // Now, really do the UnFreezing:
                     // adjust the upper and lower bounds to their original values
 
-                    foreach(Solver solver in solvers) solver.SetVariableBounds(this, Lower, Upper);
+                    foreach (Solver solver in solvers) solver.SetVariableBounds(this, Lower, Upper);
 
                     return true;
                 }
@@ -506,7 +506,7 @@ namespace Sonnet
             Ensure.NotSupported("Cannot use != operator", x, c);
             return null;
         }
-        
+
         /// <summary>
         /// Creates a new constraint "x == y"
         /// </summary>
@@ -578,7 +578,7 @@ namespace Sonnet
         {
             return (new Expression()).Subtract(x);
         }
-        
+
         /// <summary>
         /// Creates a new expression "c - x"
         /// </summary>
@@ -612,7 +612,7 @@ namespace Sonnet
             return (new Expression(x)).Subtract(y);
         }
         #endregion
-        
+
         /// <summary>
         /// Creates a new expression "c * x"
         /// </summary>
@@ -645,7 +645,7 @@ namespace Sonnet
         {
             return new Expression(x1, x2);
         }
-        
+
         /// <summary>
         /// Creates a new expression "(1/c) * x"
         /// </summary>
@@ -679,7 +679,7 @@ namespace Sonnet
         /// The upper bound value.
         /// </summary>
         protected double upper;
-        
+
         /// <summary>
         /// The lower bound value.
         /// </summary>

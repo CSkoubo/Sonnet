@@ -1,14 +1,11 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
+using COIN;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Runtime.InteropServices;
-using System.Diagnostics;
 using System.Linq;
-
-using COIN;
+using System.Text;
 
 namespace Sonnet
 {
@@ -119,7 +116,7 @@ namespace Sonnet
             get { return this.autoResetMIPSolve; }
             set { this.autoResetMIPSolve = value; }
         }
-        
+
         #region OsiSolver Properties and Parameters
         /// <summary>
         /// The name discipline; specifies how the solver will handle row and
@@ -190,9 +187,9 @@ namespace Sonnet
         /// <summary>
         /// Returns true iff there is at least one integer variable
         /// </summary>
-        public bool IsMIP 
-        { 
-            get 
+        public bool IsMIP
+        {
+            get
             {
                 // since constraints and variable can be added dynamically to the model, we check each time (below).
                 Generate();
@@ -201,7 +198,7 @@ namespace Sonnet
                     if (var.Type == VariableType.Integer) return true;
                 }
                 return false;
-            } 
+            }
         }
         #endregion
 
@@ -221,7 +218,7 @@ namespace Sonnet
             List<Type> osiTypes = new List<Type>();
             foreach (Type type in types)
             {
-                
+
                 if (type.IsSubclassOf(typeof(COIN.OsiSolverInterface)) &&
                     !type.IsAbstract)
                 {
@@ -421,7 +418,7 @@ namespace Sonnet
                                         args.Add($"{Environment.ProcessorCount}");
                                     }
                                 }
-                                else 
+                                else
                                 {
                                     // If not SupportsThreads, then no -threads argument shall be used!
                                     Ensure.IsFalse(args.Contains("-threads"), "Cannot use threads since CbcSolver is not built to SupportThreads.");
@@ -536,7 +533,7 @@ namespace Sonnet
             }
 
             log.Debug("End IsFeasible");
-            
+
             return feasible;
         }
 
@@ -591,7 +588,7 @@ namespace Sonnet
             Generate();
             ResetAfterMIPSolveInternal();
         }
-        
+
         private void ResetAfterMIPSolveInternal()
         {
             // ResetAfterMIPSolve also clears the solution, so afterwards any AssignSolution yields all zero values!
@@ -720,7 +717,7 @@ namespace Sonnet
         private void Generate(Objective obj)
         {
             Ensure.NotNull(obj, "objective");
-            
+
             //this.objective.Unregister(this); // this should have already been done!
 
             // Registering the objective is important for changing coefficients: If we change coefs of an objective,
@@ -728,7 +725,7 @@ namespace Sonnet
             obj.Assemble();
             obj.Register(this);
             obj.Assign(this, 0.0, double.NaN); // immediately also STORE!
-       
+
             GenerateVariables(obj.Coefficients);
 
             GenerateVariables(obj.QuadCoefficients);
@@ -1004,7 +1001,7 @@ namespace Sonnet
                     foreach (Coef coef in coefs)
                     {
                         int col = Offset(coef.var);
-                        
+
                         if (coef.var.AssignedSolver != this) throw new SonnetException("Trying to use variable that is not part of this model!");
                         if (col < 0 || col >= n) throw new SonnetException("Variable offset has error value.");
 
@@ -1139,7 +1136,7 @@ namespace Sonnet
                     int* nelementsObj;  // [n] per variable the number of nonzeros
                     int* columnObj;     // [nz] The index of the second variable number per nonzero element
                     double* elementObj; // [nz] The nonzero elements
-                    
+
                     startObj = CoinUtils.NewIntArray(n + 1);
                     nelementsObj = CoinUtils.NewIntArray(n);
                     columnObj = CoinUtils.NewIntArray(nz);
@@ -1159,7 +1156,7 @@ namespace Sonnet
                         // so it can happen that var1.id < var2.id, but offset(var1) > offset(var2)!
                         // only, var1.id == var2.id iff offset(var1) == offset(var2) iff var1 == var2
                         int col1 = Offset(quadcoef.var1);
-                        
+
                         if (quadcoef.var1.AssignedSolver != this) throw new SonnetException("Trying to use variable that is not part of this model!");
                         if (col1 < 0 || col1 >= n) throw new SonnetException("Variable offset has error value.");
 
@@ -1196,7 +1193,7 @@ namespace Sonnet
                         log.Debug("Using CLP-specific quadratic objective loading.");
 
                         ClpSimplex clpSimplex = osiClp.getModelPtr();
-                        
+
                         clpSimplex.loadQuadraticObjectiveUnsafe(n, startObj, columnObj, elementObj);
                         //clpSimplex.writeMps("testquad.mps", 0, 1);// for CPLEX compatibility, use formatType = 0, numberAcross = 1);
                     }
@@ -1205,7 +1202,7 @@ namespace Sonnet
                         // TODO: does QP with Cbc work? Does MIQP with Cbc work?
                         log.Debug("Using CBC-specific quadratic objective loading.");
 
-                        if (isMip) log.Warn("Only experimantal support for MIQP!"); 
+                        if (isMip) log.Warn("Only experimantal support for MIQP!");
 
                         OsiSolverInterface osiReal = osiCbc.getRealSolverPtr(); //usually the OsiClpSolver
                         if (osiReal is OsiClpSolverInterface osiRealClp)
@@ -1310,7 +1307,7 @@ namespace Sonnet
                     con.Unregister(this);
                     rawconstraints.Add(con);
                 }
-                
+
                 // empty constraints
                 constraints.Clear();
 
@@ -1363,7 +1360,7 @@ namespace Sonnet
                     }
                     if (!success) solver.writeMps(fullPathWithoutExtension);
                 }
-                else solver.writeMps(fullPathWithoutExtension);                
+                else solver.writeMps(fullPathWithoutExtension);
             }
             else if (extension.Equals(".lp"))
             {
@@ -1415,13 +1412,13 @@ namespace Sonnet
             tmp.AppendLine("Objective: " + objective.Level());
 
             tmp.AppendLine("Variables:");
-            foreach(Variable var in variables)
+            foreach (Variable var in variables)
             {
                 tmp.AppendLine(var.ToLevelString());
             }
 
             tmp.AppendLine("Constraints:");
-            foreach(Constraint con in constraints)
+            foreach (Constraint con in constraints)
             {
                 tmp.AppendLine(con.ToLevelString());
             }
@@ -1429,7 +1426,7 @@ namespace Sonnet
             tmp.AppendLine("End");
             return tmp.ToString();
         }
-        
+
         /// <summary>
         /// Returns a string the contains statitics for the current model and solver.
         /// This includes number of variables, constraints, etc.
@@ -1443,7 +1440,7 @@ namespace Sonnet
             tmp.AppendLine("Statistics");
             tmp.AppendLine(string.Format("Solver '{0}'", Name));
             tmp.AppendLine(string.Format("Model '{0}'", model.Name));
-  
+
             tmp.AppendLine(" Number of variables  : " + this.variables.Count);
             tmp.AppendLine(" Number of constraints: " + this.constraints.Count);
             tmp.AppendLine(" Number of elements   : " + solver.getNumElements());
@@ -1538,7 +1535,7 @@ namespace Sonnet
         {
             Ensure.NotNull(con, "constraint");
             if (!con.IsRegistered(this)) throw new SonnetException("Constraint not registered with model.");
- 
+
             int offset;
             if (this == con.AssignedSolver) offset = con.Offset;
             else offset = constraints.IndexOf(con);
@@ -1582,54 +1579,54 @@ namespace Sonnet
         /// Gets the number of generated constraints.
         /// </summary>
         [Obsolete("Deprecated: use property of Model", true)]
-        public int NumberOfConstraints 
-        { 
-            get 
+        public int NumberOfConstraints
+        {
+            get
             {
                 Generate();
-                return solver.getNumRows(); 
-            } 
+                return solver.getNumRows();
+            }
         }
-        
+
         /// <summary>
         /// Gets the number of generated variables.
         /// </summary>
         [Obsolete("Deprecated: Not supported. Use property of OsiSolver", true)]
-        public int NumberOfVariables 
-        { 
-            get 
+        public int NumberOfVariables
+        {
+            get
             {
                 Generate();
-                return solver.getNumCols(); 
-            } 
+                return solver.getNumCols();
+            }
         }
-        
+
         /// <summary>
         /// Gets the number of elements in the constraint matrix
         /// </summary>
         [Obsolete("Deprecated: Not supported. Use property of OsiSolver", true)]
-        public int NumberOfElements 
-        { 
-            get 
+        public int NumberOfElements
+        {
+            get
             {
                 Generate();
-                return solver.getNumElements(); 
-            } 
+                return solver.getNumElements();
+            }
         }
 
         /// <summary>
         /// Gets the number of integer variables
         /// </summary>
         [Obsolete("Deprecated: Not supported. Use property of OsiSolver", true)]
-        public int NumberOfIntegerVariables 
-        { 
-            get 
+        public int NumberOfIntegerVariables
+        {
+            get
             {
                 Generate();
-                return solver.getNumIntegers(); 
-            } 
+                return solver.getNumIntegers();
+            }
         }
-        
+
         /// <summary>
         /// Gets the generated constraints
         /// </summary>
@@ -1802,7 +1799,7 @@ namespace Sonnet
                 {
                     Variable var = variables[col];
 
-                    var.Assign(this, col, values[col], mipSolve?0.0:reducedCost[col]);
+                    var.Assign(this, col, values[col], mipSolve ? 0.0 : reducedCost[col]);
                     if (IsProvenOptimal)
                     {
                         if (!var.IsFeasible())
@@ -1812,8 +1809,8 @@ namespace Sonnet
                     }
                 }
             } // unsafe
-            
-            objective.Assign(this, solver.getObjValue() + objective.Constant, IsMIP?(solver.Bound() + objective.Constant): double.NaN);
+
+            objective.Assign(this, solver.getObjValue() + objective.Constant, IsMIP ? (solver.Bound() + objective.Constant) : double.NaN);
 
             if (IsProvenOptimal)
             {
@@ -1854,7 +1851,7 @@ namespace Sonnet
                 for (int row = 0; row < constraints.Count; row++)
                 {
                     Constraint con = constraints[row];
-                    con.Assign(this, row, mipSolve?0.0:prices[row], values[row]);
+                    con.Assign(this, row, mipSolve ? 0.0 : prices[row], values[row]);
                 }
             }
         }
@@ -1914,7 +1911,7 @@ namespace Sonnet
             int offset = Offset(var);
             solver.setColLower(offset, lower);
         }
-        
+
         internal void SetVariableBounds(Variable var, double lower, double upper)
         {
             Ensure.NotNull(var, "variable");
@@ -1958,7 +1955,7 @@ namespace Sonnet
             int offset = Offset(var);
             solver.setObjCoeff(offset, value);
         }
-        
+
         /// <summary>
         /// Not Supported. Method for changing the quadratic part of objective function
         /// </summary>
@@ -1967,7 +1964,7 @@ namespace Sonnet
         /// <param name="value">The new coefficient to set for this variable within the solver.</param>
         internal void SetObjectiveQuadCoefficient(Variable var1, Variable var2, double value)
         {
-             Ensure.NotSupported("No available solver supports setting quadratic coefs of objective.", var1, var2, value);
+            Ensure.NotSupported("No available solver supports setting quadratic coefs of objective.", var1, var2, value);
         }
 
         // methods for changing Range Constraints
@@ -2067,7 +2064,7 @@ namespace Sonnet
         {
             Ensure.NotNull(model, "model");
             Ensure.NotNull(solver, "solver");
-            
+
             id = numberOfSolvers++;
             log.Info(InternalUtils.GetAssemblyInfo());
 

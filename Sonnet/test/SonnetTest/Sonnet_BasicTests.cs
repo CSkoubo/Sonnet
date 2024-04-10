@@ -1,12 +1,9 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using COIN;
-using Sonnet;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sonnet;
 
 namespace SonnetTest
 {

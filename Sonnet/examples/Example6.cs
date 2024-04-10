@@ -1,10 +1,6 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Sonnet;
 
 namespace SonnetExamples.Example6
@@ -25,7 +21,7 @@ namespace SonnetExamples.Example6
         static int n = 3; // size of the nxn square (n = 3 -> 3x3)
         static string[] Words = { "one", "two", "ten", "ean", "nbe" };
         static string Alfabet = GetAlfabet(Words);
-        
+
         public Solver Run()
         {
             double objValue;
@@ -204,8 +200,8 @@ namespace SonnetExamples.Example6
                     for (int j = 0; j < n; j++)
                     {
                         string name = string.Format("^({0})[{1},{2}]", w, i, j);
-                        y[w][0][i, j] = new Variable("yh"+name, 0, 1, VariableType.Integer);
-                        y[w][1][i, j] = new Variable("yv"+name, 0, 1, VariableType.Integer);
+                        y[w][0][i, j] = new Variable("yh" + name, 0, 1, VariableType.Integer);
+                        y[w][1][i, j] = new Variable("yv" + name, 0, 1, VariableType.Integer);
                     }
                 }
             }

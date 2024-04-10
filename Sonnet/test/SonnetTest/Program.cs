@@ -1,10 +1,6 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sonnet;
 
@@ -46,7 +42,7 @@ namespace SonnetTest
         //            // Use the following line to only run one TestClass
         //            //if (testType != typeof(Sonnet_CbcTests)) continue;
         //            //if (testType != typeof(Sonnet_CoinNativeTests)) continue;
-                    
+
         //            object testInstance = null;
         //            var methods = testType.GetMethods()
         //                    .Where(m => m.GetCustomAttributes(typeof(TestMethodAttribute), false).Length > 0)

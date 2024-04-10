@@ -1,10 +1,6 @@
 // Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Sonnet
 {
     /// <summary>
@@ -177,9 +173,9 @@ namespace Sonnet
         /// This value is set (AssignSolution) after the optimisation.
         /// This value is not available for all solvers.
         /// </summary>
-        public double Bound 
-        { 
-            get { return bound; } 
+        public double Bound
+        {
+            get { return bound; }
         }
 
         /// <summary>
@@ -213,7 +209,7 @@ namespace Sonnet
         {
             expression.Assemble();
         }
-        
+
         /// <summary>
         /// Assigns the given solver, and set the Value and Bound of this objective.
         /// </summary>

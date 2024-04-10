@@ -1,15 +1,10 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
 using COIN;
 using Sonnet;
-using System.IO;
 using System.Runtime.Serialization;
+using System.Text;
 using System.Xml;
 
 namespace SonnetExamples.Example4
@@ -61,7 +56,7 @@ namespace SonnetExamples.Example4
             linnenRentalCo.Initialize();
             linnenRentalCo.Build();
             linnenRentalCo.Solve();
-            
+
             linnenRentalCo.SaveXml("linnenrentalco.xml");
 
             LinnenRentalCo linnenRentalCo2 = LinnenRentalCo.LoadXml("linnenrentalco.xml");

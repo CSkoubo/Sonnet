@@ -1,16 +1,11 @@
 // Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
+using COIN;
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Runtime.InteropServices;
-using System.Diagnostics;
-
 using System.IO;
-using System.Reflection;
-
-using COIN;
+using System.Text;
 
 namespace Sonnet
 {

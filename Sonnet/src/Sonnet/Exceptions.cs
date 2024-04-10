@@ -2,8 +2,6 @@
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sonnet
 {
@@ -17,7 +15,7 @@ namespace Sonnet
         /// </summary>
         public SonnetException()
         {
-            
+
         }
 
         /// <summary>
@@ -26,7 +24,7 @@ namespace Sonnet
         /// </summary>
         /// <param name="message">A message that describes the error.</param>
         public SonnetException(string message)
-            : base (message)
+            : base(message)
         {
         }
 
@@ -40,7 +38,7 @@ namespace Sonnet
         /// parameter is not a null reference, the current exception is raised in a catch
         /// block that handles the inner exception.</param>
         public SonnetException(string message, Exception innerException)
-            :base(message, innerException)
+            : base(message, innerException)
         {
         }
     }

@@ -1,10 +1,6 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Sonnet;
 
 namespace SonnetExamples.Example6b
@@ -24,7 +20,7 @@ namespace SonnetExamples.Example6b
         static int n = 3; // size of the nxn square (n = 3 -> 3x3)
         static string[] Words = { "one", "two", "ten", "ean", "nbe" };
         static char[] Alfabet = GetAlfabet(Words).ToCharArray();
-        
+
         public Solver Run()
         {
             double objValue;
@@ -126,12 +122,12 @@ namespace SonnetExamples.Example6b
 
             objValue = m.Objective.Value;
             solutionString = s.ToSolutionString();
-            
+
             return s;
         }
 
         private static void ToSolutionString(Dictionary<char, Dictionary<int, Dictionary<int, Variable>>> x, int n)
-        {            
+        {
             for (int i = 0; i < n; i++)
             {
                 string line = "";

@@ -2,7 +2,6 @@
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
 using System;
-using System.Collections.Generic;
 using System.Text;
 
 namespace Sonnet
@@ -10,19 +9,20 @@ namespace Sonnet
     /// <summary>
     /// Specifies the types of constraints: less-or-equal (LE), greater-or-equal (GE) or equal (EQ)
     /// </summary>
-    public enum ConstraintType { 
+    public enum ConstraintType
+    {
         /// <summary>
         /// Less-or-equal
         /// </summary>
-        LE, 
+        LE,
         /// <summary>
         /// Greater-or-equal
         /// </summary>
-        GE, 
+        GE,
         /// <summary>
         /// Equal
         /// </summary>
-        EQ 
+        EQ
     };
 
     /// <summary>
@@ -48,7 +48,7 @@ namespace Sonnet
         /// <param name="name">The name for the new constraint.</param>
         /// <param name="con">The constraint to be copied.</param>
         public Constraint(string name, Constraint con)
-            :base(name)
+            : base(name)
         {
             Ensure.NotNull(con, "constraint");
 
@@ -266,7 +266,7 @@ namespace Sonnet
                 }
             }
         }
-        
+
         /// <summary>
         /// Gets the lower bound of this constraint. For EQ and GE constraint, this is the right-hand side constant.
         /// For LE constraints, this is -inf.
@@ -401,7 +401,7 @@ namespace Sonnet
         {
             return numberOfConstraints++;
         }
-        
+
         /// <summary>
         /// Counts the global number of constraints. Mainly used for id.
         /// </summary>
@@ -415,7 +415,7 @@ namespace Sonnet
         /// <summary>
         /// The (left-hand side) expression of this constraint.
         /// </summary>
-        
+
         protected Expression expr;
         /// <summary>
         /// The right-hand side expression of this constraint.

@@ -123,7 +123,7 @@ namespace Sonnet
         public static Dictionary<TSource, TKey> ToMap<TSource, TKey>(this IEnumerable<TSource> source, Func<TSource, TKey> keySelector)
         {
             Dictionary<TSource, TKey> dict = new Dictionary<TSource, TKey>();
-            foreach(var i in source)
+            foreach (var i in source)
             {
                 dict.Add(i, keySelector(i));
             }
@@ -278,7 +278,7 @@ namespace Sonnet
         [Obsolete("Deprecated: Use type-safe alternative", true)]
         public static Expression Sum(this System.Collections.IEnumerable expressions)
         {
-            return Expression.Sum((IEnumerable<Expression>) expressions);
+            return Expression.Sum((IEnumerable<Expression>)expressions);
         }
 
         /// <summary>

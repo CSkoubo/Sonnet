@@ -354,7 +354,7 @@ namespace Sonnet
 
                 // linear coefs get added term coef * b * var
                 coefs.Add(new Coef(var, coef * expr.constant));
-                
+
                 // quad coefs get added terms (coef * a1) * var * x1 + (coef * a2) * var * x2
                 // loop over all linear coefs of expr 
                 int qn = expr.coefs.Count;
@@ -504,7 +504,7 @@ namespace Sonnet
             // then clear coefs and add as only coef the old constant * var
             this.coefs.Clear();
             if (this.constant != 0.0) coefs.Add(new Coef(var, coef * this.constant));
-            
+
             // lastly, no remaining constant.
             this.constant = 0.0;
 
@@ -607,7 +607,7 @@ namespace Sonnet
             int aID = var.id;
             double coef = 0.0;
 
-            for (int i = 0, n = coefs.Count; i < n; )
+            for (int i = 0, n = coefs.Count; i < n;)
             {
                 Coef c = coefs[i]; // consider ref
                 if (aID == c.id)
@@ -756,7 +756,7 @@ namespace Sonnet
             CoefVector assembled = new CoefVector();
             coefs.Sort();
 
-            for (int i = 0, n = coefs.Count; i < n; )
+            for (int i = 0, n = coefs.Count; i < n;)
             {
                 Coef newc = coefs[i]; // consider ref
                 i++;

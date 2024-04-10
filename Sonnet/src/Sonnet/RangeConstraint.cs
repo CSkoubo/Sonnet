@@ -1,10 +1,6 @@
 // Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace Sonnet
 {
     /// <summary>
@@ -163,7 +159,7 @@ namespace Sonnet
         /// The slack should be non-negative in a feasible solution.
         /// </summary>
         /// <returns>The slack compared to the upper bound of this constraint in the current solution.</returns>
-        public override double Slack() 
+        public override double Slack()
         {
             return rhs.Level() - Level();
         }

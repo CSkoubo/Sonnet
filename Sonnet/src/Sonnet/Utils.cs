@@ -3,10 +3,9 @@
 
 using System;
 using System.Collections.Generic;
-using System.Text;
-using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
 
 namespace Sonnet
 {
@@ -164,7 +163,7 @@ namespace Sonnet
         /// </summary>
         /// <param name="solver">The OsiCbcSolverInterface instance.</param>
         /// <param name="args">The arguments for CbcMain1(..).</param>
-        public static void SetCbcSolverArgs(this COIN.OsiCbcSolverInterface solver, params string []args)
+        public static void SetCbcSolverArgs(this COIN.OsiCbcSolverInterface solver, params string[] args)
         {
             cbcSolverArgs[solver] = args.ToList();
         }
@@ -272,7 +271,7 @@ namespace Sonnet
             if (b)
             {
                 if (message != null) throw new ArgumentException(message);
-                else throw new ArgumentException("The value is not false");     
+                else throw new ArgumentException("The value is not false");
             }
         }
 
@@ -289,7 +288,7 @@ namespace Sonnet
             {
                 string message = $"Given type argument is null but should be derived from type {typeof(Base).Name}";
                 if (paramName is null) throw new ArgumentNullException(message);
-                else throw new ArgumentNullException(paramName, message);                  
+                else throw new ArgumentNullException(paramName, message);
             }
             if (!derived.IsSubclassOf(typeof(Base)))
             {

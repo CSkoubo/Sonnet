@@ -1,10 +1,6 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using COIN;
 using Sonnet;
 
@@ -24,7 +20,7 @@ namespace SonnetExamples
             string solutionString;
             Run(out objValue, out solutionString);
         }
-      
+
         public void Run(out double objValue, out string solutionString)
         {
             List<Days> DaysArray = Enum.GetValues(typeof(Days)).OfType<Days>().ToList();
@@ -42,7 +38,7 @@ namespace SonnetExamples
 
             //Dictionary<Days, Variable> emp = Variable.New<Days>("emp", 0, 140, VariableType.Integer);
             Dictionary<Days, Variable> emp = DaysArray.ToMap(d => new Variable(0, 140, VariableType.Integer) { Name = "emp_" + d.ToString() });
-               
+
             Variable totemp = new Variable("totemp");
 
             Model model = new Model("Personel_Planning");
@@ -67,7 +63,7 @@ namespace SonnetExamples
             model.Objective = totemp;
             Solver solver = new Solver(model, typeof(OsiCbcSolverInterface));
             solver.Minimise();
-            
+
             objValue = model.Objective.Value;
             solutionString = solver.ToSolutionString();
 

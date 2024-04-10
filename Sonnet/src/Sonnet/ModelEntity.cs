@@ -104,7 +104,7 @@ namespace Sonnet
     /// Every ModelEntity can be Registered with multiple solvers, but can only be Assigned to at most one solver
     /// </summary>
 	public class ModelEntity : Named
-	{
+    {
         private readonly static SonnetLog log = SonnetLog.Default;
 
         /// <summary>
@@ -167,7 +167,7 @@ namespace Sonnet
             if (Assigned && object.ReferenceEquals(this.solver, solver)) return true;
 
             int id = solver.ID;
-           // return solvers.Find(s => s == solver);
+            // return solvers.Find(s => s == solver);
             return solvers.Find(s => string.Equals(s.ID, id)) != null;
         }
 
@@ -237,6 +237,6 @@ namespace Sonnet
         /// </summary>
 		protected List<Solver> solvers = new List<Solver>();
         private Solver solver = null;
-		private int offset = -1;
-	}
+        private int offset = -1;
+    }
 }

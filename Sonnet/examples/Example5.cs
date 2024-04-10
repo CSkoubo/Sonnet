@@ -1,13 +1,11 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
+using COIN;
+using Sonnet;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Xml;
-using COIN;
-using Sonnet;
 
 namespace SonnetExamples.Example5
 {
@@ -69,18 +67,18 @@ namespace SonnetExamples.Example5
             Machine[] machines = { senior1, senior2, senior3 };
 
             MachineAssignment[] machineAssignments = {
-                new MachineAssignment(senior1, producerA, 16, 250), 
-                new MachineAssignment(senior1, producerB, 20, 270), 
-                new MachineAssignment(senior1, producerC, 40, 490), 
-                new MachineAssignment(senior1, producerD, 37, 460), 
-                new MachineAssignment(senior2, producerA, 13, 200), 
-                new MachineAssignment(senior2, producerB, 29, 350), 
-                new MachineAssignment(senior2, producerC, 38, 470), 
-                new MachineAssignment(senior2, producerD, 49, 630), 
-                new MachineAssignment(senior3, producerA, 15, 230), 
-                new MachineAssignment(senior3, producerB, 25, 300), 
-                new MachineAssignment(senior3, producerC, 42, 520), 
-                new MachineAssignment(senior3, producerD, 45, 550), 
+                new MachineAssignment(senior1, producerA, 16, 250),
+                new MachineAssignment(senior1, producerB, 20, 270),
+                new MachineAssignment(senior1, producerC, 40, 490),
+                new MachineAssignment(senior1, producerD, 37, 460),
+                new MachineAssignment(senior2, producerA, 13, 200),
+                new MachineAssignment(senior2, producerB, 29, 350),
+                new MachineAssignment(senior2, producerC, 38, 470),
+                new MachineAssignment(senior2, producerD, 49, 630),
+                new MachineAssignment(senior3, producerA, 15, 230),
+                new MachineAssignment(senior3, producerB, 25, 300),
+                new MachineAssignment(senior3, producerC, 42, 520),
+                new MachineAssignment(senior3, producerD, 45, 550),
             };
 
             AgriCoop agriCoop = new AgriCoop(machines, producers, machineAssignments);
@@ -123,7 +121,7 @@ namespace SonnetExamples.Example5
                 writer.Formatting = Formatting.Indented;
 
                 DataContractSerializer ser = new DataContractSerializer(typeof(AgriCoop));
-                
+
                 // Using references for Machine and Producer means that the Id attribute is used, which is defined in the MS Serialization namespace
                 // To get cleaner XML, we declare this namespace first.
                 // ser.WriteObject(writer, this); // replace by following lines.

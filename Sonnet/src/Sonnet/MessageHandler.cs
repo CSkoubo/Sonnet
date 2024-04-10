@@ -2,8 +2,6 @@
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Sonnet
 {
@@ -72,7 +70,7 @@ namespace Sonnet
         /// </summary>
         public static SonnetLog Default
         {
-            get 
+            get
             {
                 if (_default == null) _default = new SonnetLog();
 

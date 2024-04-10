@@ -1,12 +1,9 @@
 ﻿// Copyright (C) Jan-Willem Goossens 
 // This code is licensed under the terms of the Eclipse Public License (EPL).
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using COIN;
-using Sonnet;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Sonnet;
 
 namespace SonnetTest
 {
@@ -116,7 +113,7 @@ namespace SonnetTest
             // Allow also better solutions, but not worse. 
             // If your machine is significantly slower, the solution value will be worse (higher) and this test will fail--but can be ignored.
             Assert.IsTrue(model.Objective.Value >= 21801.18 && model.Objective.Value <= 22465, $"Best minimization solution of mas74 until now is ${model.Objective.Value} but should be between 21801.18 (opt) and 22465");
-            
+
             // bound is expected to be 20482 on the reference machine.
             // If your machine is slower, the bound will be worse (lower)
             // If your machine is faster, the bound could be better (higher)
@@ -365,13 +362,14 @@ namespace SonnetTest
             osiCbc.AddCbcSolverArgs("-sec", "15"); // Stop within 15 seconds. 
             osiCbc.AddCbcSolverArgs("-threads", "6"); // Use 6 threads
 #if NET
-            CbcEventHandler handler = delegate (CbcModel m, CbcEvent cbcEvent) {
+            CbcEventHandler handler = delegate (CbcModel m, CbcEvent cbcEvent)
+            {
                 // no special action in this handler, just checking the ManagedThreadId
                 int threadId = System.Threading.Thread.CurrentThread.ManagedThreadId;
                 if (threadId > SonnetCbcTest9MaxThreadId) SonnetCbcTest9MaxThreadId = threadId;
-                return CbcAction.noAction; 
+                return CbcAction.noAction;
             };
-            osiCbc.Model.passInEventHandler(handler); 
+            osiCbc.Model.passInEventHandler(handler);
 #else
             // When for NET48 this test is run with vstest console or dotnet test,
             // the sec timelimit is not honored if a handler is passed in.
@@ -381,7 +379,7 @@ namespace SonnetTest
 
             Assert.IsTrue(solver.IsFeasible());
             Assert.IsFalse(solver.IsProvenOptimal, "should not be optimal yet");
-            Assert.IsTrue(SonnetCbcTest9MaxThreadId >= 8, "should have used at least 8 threads by now."); 
+            Assert.IsTrue(SonnetCbcTest9MaxThreadId >= 8, "should have used at least 8 threads by now.");
             // Expected: (threads + 2)
 
             // Allow also better solutions, but not worse. The problem is minimization.
