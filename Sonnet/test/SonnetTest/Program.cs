@@ -24,82 +24,82 @@ namespace SonnetTest
             System.Globalization.CultureInfo.CurrentCulture = System.Globalization.CultureInfo.InvariantCulture;
         }
 
-        /// <summary>
-        /// This is a very rudimentary way to run the test self-contained without framework.
-        /// </summary>
-        /// <param name="args"></param>
-        public static void Main(string[] args)
-        {
-            System.GC.Collect(); // Force Gc.Collect to ensure that indeed all memory is properly freed.
-            System.GC.WaitForPendingFinalizers();
-            double startMemoryGb = Utils.AvailableMemoryGb;
-            {
-                AssemblyInit(null);
+        ///// <summary>
+        ///// This is a very rudimentary way to run the test self-contained without framework.
+        ///// </summary>
+        ///// <param name="args"></param>
+        //public static void Main(string[] args)
+        //{
+        //    System.GC.Collect(); // Force Gc.Collect to ensure that indeed all memory is properly freed.
+        //    System.GC.WaitForPendingFinalizers();
+        //    double startMemoryGb = Utils.AvailableMemoryGb;
+        //    {
+        //        AssemblyInit(null);
 
-                Assembly assembly = typeof(Program).Assembly;
-                var types = assembly.GetTypes()
-                    .Where(t => t.GetCustomAttributes(typeof(TestClassAttribute), false).Length > 0)
-                    .OrderBy(t => t.Name)
-                    .ToArray();
-                foreach (var testType in types)
-                {
-                    // Use the following line to only run one TestClass
-                    //if (testType != typeof(Sonnet_CbcTests)) continue;
-                    //if (testType != typeof(Sonnet_CoinNativeTests)) continue;
+        //        Assembly assembly = typeof(Program).Assembly;
+        //        var types = assembly.GetTypes()
+        //            .Where(t => t.GetCustomAttributes(typeof(TestClassAttribute), false).Length > 0)
+        //            .OrderBy(t => t.Name)
+        //            .ToArray();
+        //        foreach (var testType in types)
+        //        {
+        //            // Use the following line to only run one TestClass
+        //            //if (testType != typeof(Sonnet_CbcTests)) continue;
+        //            //if (testType != typeof(Sonnet_CoinNativeTests)) continue;
                     
-                    object testInstance = null;
-                    var methods = testType.GetMethods()
-                            .Where(m => m.GetCustomAttributes(typeof(TestMethodAttribute), false).Length > 0)
-                            .OrderBy(m => m.Name)
-                            .ToArray();
+        //            object testInstance = null;
+        //            var methods = testType.GetMethods()
+        //                    .Where(m => m.GetCustomAttributes(typeof(TestMethodAttribute), false).Length > 0)
+        //                    .OrderBy(m => m.Name)
+        //                    .ToArray();
 
-                    // If there are any TestMethods found, then create an instance of the TestClass
-                    if (methods.Any()) testInstance = assembly.CreateInstance(testType.FullName);
-                    foreach (var method in methods)
-                    {
-                        //if (method.Name != nameof(Sonnet_CoinNativeTests.SonnetCoinNativeTest2)) continue;
+        //            // If there are any TestMethods found, then create an instance of the TestClass
+        //            if (methods.Any()) testInstance = assembly.CreateInstance(testType.FullName);
+        //            foreach (var method in methods)
+        //            {
+        //                //if (method.Name != nameof(Sonnet_CoinNativeTests.SonnetCoinNativeTest2)) continue;
 
-                        var p = method.GetParameters();
-                        if (p.Length == 0)
-                        {
-                            Console.WriteLine($"Starting test {method.Name} ()");
-                            method.Invoke(testInstance, null);
-                            Console.WriteLine($"Finished test {method.Name}: Passed");
-                        }
-                        else if (p.Length == 1)
-                        {
-                            Console.WriteLine($"Starting test {method.Name}");
-                            var dynamicDatas = method.GetCustomAttributes(typeof(DynamicDataAttribute), false);
-                            Assert.IsTrue(dynamicDatas.Length == 1, "Found more than one DynamicData attributes");
-                            if (dynamicDatas.Length == 1)
-                            {
-                                var dynamicData = (DynamicDataAttribute)dynamicDatas[0];
-                                var datas = dynamicData.GetData(method);
-                                // If throw System.ArgumentNullException: Value cannot be null. Parameter name: Property TestSolverTypes
-                                // then check that the [DynamicData(nameof(MyProperty), typeof(MyClass))] has the correct MyClass mentioned
+        //                var p = method.GetParameters();
+        //                if (p.Length == 0)
+        //                {
+        //                    Console.WriteLine($"Starting test {method.Name} ()");
+        //                    method.Invoke(testInstance, null);
+        //                    Console.WriteLine($"Finished test {method.Name}: Passed");
+        //                }
+        //                else if (p.Length == 1)
+        //                {
+        //                    Console.WriteLine($"Starting test {method.Name}");
+        //                    var dynamicDatas = method.GetCustomAttributes(typeof(DynamicDataAttribute), false);
+        //                    Assert.IsTrue(dynamicDatas.Length == 1, "Found more than one DynamicData attributes");
+        //                    if (dynamicDatas.Length == 1)
+        //                    {
+        //                        var dynamicData = (DynamicDataAttribute)dynamicDatas[0];
+        //                        var datas = dynamicData.GetData(method);
+        //                        // If throw System.ArgumentNullException: Value cannot be null. Parameter name: Property TestSolverTypes
+        //                        // then check that the [DynamicData(nameof(MyProperty), typeof(MyClass))] has the correct MyClass mentioned
 
-                                foreach (var data in datas)
-                                {
-                                    Console.WriteLine($"Starting test {method.Name} ({string.Join(",", data)})");
-                                    method.Invoke(testInstance, data);
-                                    Console.WriteLine($"Finished test {method.Name} ({string.Join(",", data)}): Passed");
-                                }
-                            }
-                            Console.WriteLine($"Finished test {method.Name}: Passed");
-                        }
+        //                        foreach (var data in datas)
+        //                        {
+        //                            Console.WriteLine($"Starting test {method.Name} ({string.Join(",", data)})");
+        //                            method.Invoke(testInstance, data);
+        //                            Console.WriteLine($"Finished test {method.Name} ({string.Join(",", data)}): Passed");
+        //                        }
+        //                    }
+        //                    Console.WriteLine($"Finished test {method.Name}: Passed");
+        //                }
 
-                    }
-                }
-            }
+        //            }
+        //        }
+        //    }
 
-            System.GC.Collect(); // Force Gc.Collect to ensure that indeed all memory is properly freed.
-            System.GC.WaitForPendingFinalizers();
+        //    System.GC.Collect(); // Force Gc.Collect to ensure that indeed all memory is properly freed.
+        //    System.GC.WaitForPendingFinalizers();
 
-            double endMemoryGb = Utils.AvailableMemoryGb;
-            Console.WriteLine("Rudimentary memory leak check:");
-            Console.WriteLine($"Available Memory at the start of testing: {startMemoryGb} (GB)");
-            Console.WriteLine($"Available Memory at the end of testing: {endMemoryGb} (GB)");
-        }
+        //    double endMemoryGb = Utils.AvailableMemoryGb;
+        //    Console.WriteLine("Rudimentary memory leak check:");
+        //    Console.WriteLine($"Available Memory at the start of testing: {startMemoryGb} (GB)");
+        //    Console.WriteLine($"Available Memory at the end of testing: {endMemoryGb} (GB)");
+        //}
     }
     public static class Utils
     {
